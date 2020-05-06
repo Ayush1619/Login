@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".HomeActivity">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_one"
+            android:text="I have Aadhar Card"
+            android:layout_marginLeft="110dp"
+            android:onClick="checkButton"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I don't have Aadhar Card"
+            android:id="@+id/radio_two"
+            android:layout_marginLeft="110dp"
+            android:onClick="checkButton"/></RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_selected"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="Your selection:"
+        android:layout_marginLeft="140dp"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_apply"
+        android:layout_below="@+id/text_view_selected"
+        android:layout_centerHorizontal="true"
+        android:text="Apply"
+        android:layout_marginLeft="150dp"/>
+
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="10dp"
+        android:id = "@+id/editText"
+        android:hint = "Enter Your Adhar Number"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText1"
+        android:hint = "Enter Your Name"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText2"
+        android:hint = "Enter Address"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText3"
+        android:hint = "Enter Pin Code"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText4"
+        android:hint = "Enter Mobile Number"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText5"
+        android:hint = "Enter email id"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText6"
+        android:hint = "Enter Password"/>
+    <EditText
+        android:layout_width = "fill_parent"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop="1dp"
+        android:id = "@+id/editText7"
+        android:hint = "Re Enter Pasword"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:text="Logout"/>
+
+
+</LinearLayout>
